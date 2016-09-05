@@ -1,0 +1,19 @@
+{
+    "name": "l5starter/core",
+    "description": "Laravel 5 Starter, Package Core",
+    "type": "laravel-package",
+    "license": "MIT",
+    "homepage": "http://www.srisattha.com",
+    "authors": [
+        {
+            "name": "Wiwat Srisattha",
+            "email": "wiwat_srt@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "L5Starter\\Core\\": "src/"
+        }
+    }
+}
