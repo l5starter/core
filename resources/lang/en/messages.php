@@ -15,6 +15,6 @@ return [
     'delete' => [
         'warning' => 'Are you sure you wish to delete this record?',
         'error' => 'There was an issue deleting the record. Please try again.',
-        'success' => 'Deleted success.'
+        'success' => 'Deleted success.',
     ],
 ];

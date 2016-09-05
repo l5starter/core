@@ -2,7 +2,6 @@
 
 namespace L5Starter\Core\Support;
 
-
 class NumberFormatter
 {
     /**
