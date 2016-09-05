@@ -11,45 +11,45 @@ class DateFormatter
      *
      * @return array
      */
-    static function formats()
+    public static function formats()
     {
         return [
             'm/d/Y' => [
                 'setting' => 'm/d/Y',
-                'datepicker' => 'mm/dd/yyyy'
+                'datepicker' => 'mm/dd/yyyy',
             ],
             'm-d-Y' => [
                 'setting' => 'm-d-Y',
-                'datepicker' => 'mm-dd-yyyy'
+                'datepicker' => 'mm-dd-yyyy',
             ],
             'm.d.Y' => [
                 'setting' => 'm.d.Y',
-                'datepicker' => 'mm.dd.yyyy'
+                'datepicker' => 'mm.dd.yyyy',
             ],
             'Y/m/d' => [
                 'setting' => 'Y/m/d',
-                'datepicker' => 'yyyy/mm/dd'
+                'datepicker' => 'yyyy/mm/dd',
             ],
             'Y-m-d' => [
                 'setting' => 'Y-m-d',
-                'datepicker' => 'yyyy-mm-dd'
+                'datepicker' => 'yyyy-mm-dd',
             ],
             'Y.m.d' => [
                 'setting' => 'Y.m.d',
-                'datepicker' => 'yyyy.mm.dd'
+                'datepicker' => 'yyyy.mm.dd',
             ],
             'd/m/Y' => [
                 'setting' => 'd/m/Y',
-                'datepicker' => 'dd/mm/yyyy'
+                'datepicker' => 'dd/mm/yyyy',
             ],
             'd-m-Y' => [
                 'setting' => 'd-m-Y',
-                'datepicker' => 'dd-mm-yyyy'
+                'datepicker' => 'dd-mm-yyyy',
             ],
             'd.m.Y' => [
                 'setting' => 'd.m.Y',
-                'datepicker' => 'dd.mm.yyyy'
-            ]
+                'datepicker' => 'dd.mm.yyyy',
+            ],
         ];
     }
 
@@ -82,11 +82,11 @@ class DateFormatter
     {
         $date = new DateTime($date);
 
-        if (!$includeTime) {
+        if (! $includeTime) {
             return $date->format(config('settings.dateFormat'));
         }
 
-        return $date->format(config('settings.dateFormat') . ' h:i:s A');
+        return $date->format(config('settings.dateFormat').' h:i:s A');
     }
 
     /**
@@ -102,8 +102,6 @@ class DateFormatter
 
             return $date->format('Y-m-d');
         }
-
-        return null;
     }
 
     /**
