@@ -11,45 +11,45 @@ class DateFormatter
      *
      * @return array
      */
-    static function formats()
+    public static function formats()
     {
         return [
             'm/d/Y' => [
-                'setting' => 'm/d/Y',
-                'datepicker' => 'mm/dd/yyyy'
+                'setting'    => 'm/d/Y',
+                'datepicker' => 'mm/dd/yyyy',
             ],
             'm-d-Y' => [
-                'setting' => 'm-d-Y',
-                'datepicker' => 'mm-dd-yyyy'
+                'setting'    => 'm-d-Y',
+                'datepicker' => 'mm-dd-yyyy',
             ],
             'm.d.Y' => [
-                'setting' => 'm.d.Y',
-                'datepicker' => 'mm.dd.yyyy'
+                'setting'    => 'm.d.Y',
+                'datepicker' => 'mm.dd.yyyy',
             ],
             'Y/m/d' => [
-                'setting' => 'Y/m/d',
-                'datepicker' => 'yyyy/mm/dd'
+                'setting'    => 'Y/m/d',
+                'datepicker' => 'yyyy/mm/dd',
             ],
             'Y-m-d' => [
-                'setting' => 'Y-m-d',
-                'datepicker' => 'yyyy-mm-dd'
+                'setting'    => 'Y-m-d',
+                'datepicker' => 'yyyy-mm-dd',
             ],
             'Y.m.d' => [
-                'setting' => 'Y.m.d',
-                'datepicker' => 'yyyy.mm.dd'
+                'setting'    => 'Y.m.d',
+                'datepicker' => 'yyyy.mm.dd',
             ],
             'd/m/Y' => [
-                'setting' => 'd/m/Y',
-                'datepicker' => 'dd/mm/yyyy'
+                'setting'    => 'd/m/Y',
+                'datepicker' => 'dd/mm/yyyy',
             ],
             'd-m-Y' => [
-                'setting' => 'd-m-Y',
-                'datepicker' => 'dd-mm-yyyy'
+                'setting'    => 'd-m-Y',
+                'datepicker' => 'dd-mm-yyyy',
             ],
             'd.m.Y' => [
-                'setting' => 'd.m.Y',
-                'datepicker' => 'dd.mm.yyyy'
-            ]
+                'setting'    => 'd.m.Y',
+                'datepicker' => 'dd.mm.yyyy',
+            ],
         ];
     }
 
@@ -74,9 +74,10 @@ class DateFormatter
     /**
      * Converts a stored date to the user formatted date.
      *
-     * @param date $date The yyyy-mm-dd standardized date
+     * @param date $date        The yyyy-mm-dd standardized date
      * @param bool $includeTime Whether or not to include the time
-     * @return date             The user formatted date
+     *
+     * @return date The user formatted date
      */
     public static function format($date = null, $includeTime = false)
     {
@@ -86,14 +87,15 @@ class DateFormatter
             return $date->format(config('settings.dateFormat'));
         }
 
-        return $date->format(config('settings.dateFormat') . ' h:i:s A');
+        return $date->format(config('settings.dateFormat').' h:i:s A');
     }
 
     /**
      * Converts a user submitted date back to standard yyyy-mm-dd format.
      *
-     * @param  date $userDate The user submitted date
-     * @return date             The yyyy-mm-dd standardized date
+     * @param date $userDate The user submitted date
+     *
+     * @return date The yyyy-mm-dd standardized date
      */
     public static function unformat($userDate = null)
     {
@@ -102,8 +104,6 @@ class DateFormatter
 
             return $date->format('Y-m-d');
         }
-
-        return null;
     }
 
     /**

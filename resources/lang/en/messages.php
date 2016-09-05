@@ -2,7 +2,7 @@
 
 return [
     '404_not_found' => '404 Not Found.',
-    'create' => [
+    'create'        => [
         'success' => 'Created success.',
     ],
     'edit' => [
@@ -10,11 +10,11 @@ return [
     ],
     'update' => [
         'success' => 'Updated success.',
-        'error' => 'This record was not updated, please try again.',
+        'error'   => 'This record was not updated, please try again.',
     ],
     'delete' => [
         'warning' => 'Are you sure you wish to delete this record?',
-        'error' => 'There was an issue deleting the record. Please try again.',
-        'success' => 'Deleted success.'
+        'error'   => 'There was an issue deleting the record. Please try again.',
+        'success' => 'Deleted success.',
     ],
 ];

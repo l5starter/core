@@ -14,13 +14,13 @@ class CoreServiceProvider extends ServiceProvider
     public function boot()
     {
         if (!$this->app->routesAreCached()) {
-            require __DIR__ . '/Http/routes.php';
+            require __DIR__.'/Http/routes.php';
         }
 
-        $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'l5starter');
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'l5starter');
+        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'l5starter');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'l5starter');
         // Publishing File
-        $this->publishes([__DIR__ . '/../public/assets' => public_path('/assets/adminLTE')], 'public');
+        $this->publishes([__DIR__.'/../public/assets' => public_path('/assets/adminLTE')], 'public');
         $this->publishes([__DIR__.'/../resources/views' => resource_path('views/vendor/l5starter')]);
     }
 
