@@ -2,13 +2,13 @@
 
 namespace L5Starter\Core\Support;
 
-
 class NumberFormatter
 {
     /**
      * Formats a number accordingly.
      *
-     * @param  float $number
+     * @param float $number
+     *
      * @return float
      */
     public static function format($number)
@@ -19,7 +19,8 @@ class NumberFormatter
     /**
      * UnFormats a formatted number.
      *
-     * @param  float $number
+     * @param float $number
+     *
      * @return float
      */
     public static function unFormat($number)

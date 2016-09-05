@@ -8,8 +8,9 @@ class PaginationHelper extends BootstrapThreePresenter
 {
     public function render()
     {
-        if( ! $this->hasPages())
+        if (!$this->hasPages()) {
             return '';
+        }
 
         return sprintf(
             '<ul class="pagination no-margin pull-right">%s %s %s</ul>',
