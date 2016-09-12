@@ -1,6 +1,7 @@
 {
     "name": "l5starter/core",
     "description": "Laravel 5 Starter, Package Core",
+    "keywords": ["laravel", "starter"],
     "type": "laravel-package",
     "license": "MIT",
     "homepage": "http://www.srisattha.com",
@@ -10,10 +11,10 @@
             "email": "wiwat_srt@hotmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "L5Starter\\Core\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
