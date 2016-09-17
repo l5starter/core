@@ -11,6 +11,11 @@
             "email": "wiwat_srt@hotmail.com"
         }
     ],
+    "require": {
+        "laravelcollective/html": "5.2.*",
+        "laracasts/flash": "~2.0",
+        "prettus/l5-repository": "^2.6"
+    },
     "autoload": {
         "psr-4": {
             "L5Starter\\Core\\": "src/"
