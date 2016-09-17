@@ -20,16 +20,6 @@
                     <i class="fa fa-dashboard"></i> <span>{{ trans('l5starter::general.dashboard') }}</span>
                 </a>
             </li>
-            <li class="{{ (Request::is('admin/users*') ? 'active' : '') }}">
-                <a href="{{ route('admin.users.index') }}">
-                    <i class="fa fa-user"></i> <span>{{ trans('l5starter::general.users') }}</span>
-                </a>
-            </li>
-            <li class="{{ (Request::is('admin/settings*') ? 'active' : '') }}">
-                <a href="{{ route('admin.settings.index') }}">
-                    <i class="fa fa-cog"></i> <span>{{ trans('l5starter::general.settings') }}</span>
-                </a>
-            </li>
         </ul><!-- /.sidebar-menu -->
     </section><!-- /.sidebar -->
 </aside><!-- /.main-sidebar -->
