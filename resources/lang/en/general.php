@@ -24,4 +24,6 @@ return [
     // Modules
     'users' => 'Users',
     'settings' => 'Settings',
+    'roles' => 'Roles',
+    'permissions' => 'Permissions',
 ];
